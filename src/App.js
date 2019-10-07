@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
 import {Col, Card} from 'reactstrap'
@@ -8,7 +8,9 @@ import "antd/dist/antd.css";
 
 import Content from './content'
 import Declaration from './Declaration'
-
+import Landloard from './Landloard'
+import Official from './Official'
+import ConditionsRegulations from './Conditions_Regulations'
 
 const { Step } = Steps;
 
@@ -22,9 +24,17 @@ const steps = [
     content: <Declaration/>,
   },
   {
-    title: 'Last',
-    content: 'Last-content',
+    title: 'Landlord',
+    content: <Landloard/>,
   },
+  {
+    title: 'Official Use Only',
+    content: <Official/>,
+  },
+  {
+    title: 'Conditions and Regulations',
+    content: <ConditionsRegulations/>,
+  }
 ];
 
 class App extends React.Component {
