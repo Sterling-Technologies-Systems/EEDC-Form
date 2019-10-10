@@ -28,7 +28,7 @@ class Login extends Component {
      <div className="container-fluid bg-primary" style={{height: '100vh', paddingTop: '10%'}}>
                      <div className="col-md-4 my-auto mx-auto ml-auto mr-auto pt-5">
 
-             <Card className="mt-5" style={{width: '100%'}}>
+             <Card className="mt-5 pt-3 pb-3" style={{width: '100%'}}>
  
                 <Card.Content>
 
