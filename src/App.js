@@ -63,7 +63,7 @@ class App extends React.Component {
             <Card className="shadow mb-5">
 
                 <div className="p-2">
-                    <Steps current={current}>
+                    <Steps current={current} >
                   {steps.map(item => (
                     <Step key={item.title} title={item.title} />
                   ))}

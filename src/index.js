@@ -6,7 +6,19 @@ import * as serviceWorker from './serviceWorker';
 import 'semantic-ui-css/semantic.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import Login from './login'
+
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+
+ const routing = (
+    <Router>
+        <Switch>
+            <Route path="/" component={App} exact={true}/>
+            <Route path="/login" component={Login}></Route>
+        </Switch>
+    </Router>
+ )
+ReactDOM.render(routing, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
