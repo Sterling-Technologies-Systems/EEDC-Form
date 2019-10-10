@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import {Icon, Input, } from 'antd';
 import {Card, Form, Button, Checkbox  } from 'semantic-ui-react'
-
+import {egrid} from '../src/img/egrid.jpg'
 class Login extends Component {
     constructor(props){
         super(props);
@@ -23,9 +23,14 @@ class Login extends Component {
 
 
     render() {
-       
-        return (
-     <div className="container-fluid bg-primary" style={{height: '100vh', paddingTop: '10%'}}>
+        const BackgroundHead = {
+            height: '100vh', 
+            paddingTop: '10%'
+        }
+
+    
+        return ( 
+     <div className="container-fluid bg-cover" style={BackgroundHead}>
                      <div className="col-md-4 my-auto mx-auto ml-auto mr-auto pt-5">
 
              <Card className="mt-5 pt-3 pb-3" style={{width: '100%'}}>
