@@ -1,5 +1,6 @@
 import React from 'react';
 
+import {Link} from 'react-router-dom'
 import './App.css';
 
 import {Col, Card} from 'reactstrap'
@@ -61,7 +62,7 @@ class App extends React.Component {
       <div>
         <Col md={8} className="ml-auto mr-auto">
             <Card className="shadow mb-5">
-
+            <Link to="/login">Login</Link>
                 <div className="p-2">
                     <Steps current={current} >
                   {steps.map(item => (
