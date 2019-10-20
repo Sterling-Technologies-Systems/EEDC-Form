@@ -8,8 +8,18 @@ class Login extends Component {
         super(props);
 
         this.state = {
-            getFieldDecorator: ''
+            getFieldDecorator: '',
+            emailAddress: '',
+            password: ''
         }
+    }
+
+    changeText = (event) => {
+        this.setState({
+          [event.target.name]: [event.target.value]
+        });
+
+        console.log([event.target.value]);
     }
 
      handleSubmit = e => {
@@ -42,11 +52,11 @@ class Login extends Component {
                         <Form>
     <Form.Field>
       <label>Email Address</label>
-      <input placeholder='Email Address' />
+      <input placeholder='Email Address' name="emailAddress" onChange={this.changeText}/>
     </Form.Field>
     <Form.Field>
       <label>Password</label>
-      <input placeholder='Password' />
+      <input placeholder='Password' name="password" onChange={this.changeText}/>
     </Form.Field>
 
     <Button type='submit'>Login</Button>

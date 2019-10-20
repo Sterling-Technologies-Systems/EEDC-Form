@@ -7,11 +7,9 @@ import {Col, Card} from 'reactstrap'
 import { Steps, Button, message } from 'antd';
 import "antd/dist/antd.css";
 
-import Content from './content'
-import Declaration from './Declaration'
-import Landloard from './Landloard'
-import Official from './Official'
-import ConditionsRegulations from './Conditions_Regulations'
+import Content from './Personal/content'
+import Landloard from './Personal/Landloard'
+import ConditionsRegulations from './Personal/Conditions_Regulations'
 
 const { Step } = Steps;
 
@@ -21,16 +19,8 @@ const steps = [
     content: <Content/>,
   },
   {
-    title: 'Declaration',
-    content: <Declaration/>,
-  },
-  {
     title: 'Landlord',
     content: <Landloard/>,
-  },
-  {
-    title: 'Official Use Only',
-    content: <Official/>,
   },
   {
     title: 'Conditions and Regulations',
