@@ -6,7 +6,10 @@ import * as serviceWorker from './serviceWorker';
 import 'semantic-ui-css/semantic.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+import MeterReader from '../src/meterReader'
 import Login from './login'
+import OfficialForm from '../src/Official'
 
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
@@ -15,6 +18,8 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
         <Switch>
             <Route path="/" component={App} exact={true}/>
             <Route path="/login" component={Login}></Route>
+            <Route path="/MeterReader" component={MeterReader} />
+            <Route path="/OfficialForm" component={OfficialForm} />
         </Switch>
     </Router>
  )
