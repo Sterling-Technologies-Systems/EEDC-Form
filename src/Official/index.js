@@ -4,8 +4,9 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
+import { Col, Card, CardHeader, Jumbotron } from "reactstrap";
 
-import { Col, Card } from "reactstrap";
+
 import { Steps, Button, message } from "antd";
 import "antd/dist/antd.css";
 
@@ -42,7 +43,10 @@ class OfficialForm extends React.Component {
     const { current } = this.state;
     return (
       <div>
-        <Col md={8} className="ml-auto mr-auto">
+            <Jumbotron className="bg-primary" style={{borderRadius: '0px', height: '180px'}}>
+      
+      </Jumbotron>
+        <Col md={8} className="ml-auto mr-auto"  style={{marginTop: '-130px'}}>
           <Card className="shadow mb-5">
             <Link to="/login">Login</Link>
             <div className="p-2">

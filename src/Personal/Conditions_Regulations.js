@@ -17,7 +17,7 @@ class ConditionsRegulations extends Component {
 
                         <p>
                             hereby request that Electricity will be supplied in accordance with the Electricity
-Power Sector Reform Act 2005of the Federal Government of Nigeria and all the relevant Codes and Regulations as approved by the Nigerian Electricity
+Power Sector Reform Act 2005 of the Federal Government of Nigeria and all the relevant Codes and Regulations as approved by the Nigerian Electricity
 Regulatory Commission (NERC).
                         </p>
 <br/>

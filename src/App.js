@@ -3,13 +3,15 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import './App.css';
 
-import {Col, Card} from 'reactstrap'
+import { Col, Card, CardHeader, Jumbotron } from "reactstrap";
 import { Steps, Button, message } from 'antd';
 import "antd/dist/antd.css";
 
 import Content from './Personal/content'
 import Landloard from './Personal/Landloard'
 import ConditionsRegulations from './Personal/Conditions_Regulations'
+
+import Navigation from '../src/Navigation/Navigation'
 
 const { Step } = Steps;
 
@@ -50,16 +52,20 @@ class App extends React.Component {
     const { current } = this.state;
     return (
       <div>
-        <Col md={8} className="ml-auto mr-auto">
+      <Navigation/>
+      <Jumbotron className="bg-primary" style={{borderRadius: '0px', height: '200px'}}>
+      
+      </Jumbotron>
+        <Col md={8} className="ml-auto mr-auto" style={{marginTop: '-130px'}}>
             <Card className="shadow mb-5">
-            <Link to="/login">Login</Link>
-                <div className="p-2">
+          
+                <CardHeader>
                     <Steps current={current} >
                   {steps.map(item => (
                     <Step key={item.title} title={item.title} />
                   ))}
                 </Steps>
-                </div>
+                </CardHeader>
                 <div className="steps-content">{steps[current].content}</div>
                 <div className="card-footer mt-0 pt-3 steps-action">
                  
@@ -70,13 +76,13 @@ class App extends React.Component {
                   )}
 
                   {current < steps.length - 1 && (
-                    <Button type="primary" className="" onClick={() => this.next()}>
+                    <Button type="primary" style={{float:'right'}} onClick={() => this.next()}>
                       Next
                     </Button>
                   )}
 
                    {current === steps.length - 1 && (
-                    <Button type="primary" onClick={() => message.success('Processing complete!')}>
+                    <Button type="primary"  style={{float:'right'}} onClick={() => message.success('Processing complete!')}>
                       Done
                     </Button>
                   )}

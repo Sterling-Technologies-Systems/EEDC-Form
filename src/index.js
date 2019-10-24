@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import 'semantic-ui-css/semantic.min.css'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+import meterTable from '../src/meterReader/meterTable'
 import MeterReader from '../src/meterReader'
 import Login from './login'
 import OfficialForm from '../src/Official'
+import personalTable from '../src/Personal/personalTable'
+import "semantic-ui-css/semantic.min.css";
 
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
@@ -20,6 +22,9 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
             <Route path="/login" component={Login}></Route>
             <Route path="/MeterReader" component={MeterReader} />
             <Route path="/OfficialForm" component={OfficialForm} />
+            <Route path="/personalTable" component={personalTable} />
+
+            <Route path="/meterTable" component={meterTable} />
         </Switch>
     </Router>
  )
