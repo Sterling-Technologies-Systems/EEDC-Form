@@ -27,14 +27,9 @@ const Navigation = props => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="/">login</NavLink>
+              <NavLink href="/">LOGIN</NavLink>
             </NavItem>
             
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-            </UncontrolledDropdown>
           </Nav>
         </Collapse>
       </Navbar>
